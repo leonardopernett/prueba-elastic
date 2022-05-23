@@ -8,7 +8,7 @@ const app     = express()
 const s3 = new AWS.S3({
   region:'us-east-1',
   sslEnabled:false
-})
+}) 
 
 app.get('/', async (req,res) => {
 
