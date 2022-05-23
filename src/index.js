@@ -17,7 +17,7 @@ var filePath = path.resolve('./public/uploads/img.jpg');
 app.get('/', async (req,res) => {
 
     var params = {
-      Bucket: 'repositorio-articulos-nik--banco-dev',
+      Bucket: 'aws-nik-mx-bk',
       Body : fs.createReadStream(filePath),
       Key : "folder/"+Date.now()+"_"+path.basename(filePath) 
     };
